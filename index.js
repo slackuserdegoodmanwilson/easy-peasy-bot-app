@@ -85,7 +85,7 @@ controller.on('bot_channel_join', function (bot, message) {
     bot.reply(message, "I'm here!")
 });
 
-controller.hears(['hello', 'good day', 'bonjour'], //Thanks Ernesto
+controller.hears('hello',
 	'direct_message,mention,direct_mention',
 	function (bot, message) {
     	bot.reply(message, 'Hello!');
